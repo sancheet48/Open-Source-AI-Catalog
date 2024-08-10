@@ -1,0 +1,9 @@
+streamlit
+PyPDF2
+sentence-transformers
+faiss-cpu
+requests
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch==2.2.0+cpu
+langchain
+langchain-community
