@@ -56,7 +56,7 @@ def startup():
 
 # Instantiate the FastApi application and add the custom schema to it
 api = fastapi.FastAPI(
-    title="EVF Server Query Bot",
+    title="Mongo ChatBot API.",
     version=f"{__version__}",
     description="Chat with MongoDB Database.",
     contact={
