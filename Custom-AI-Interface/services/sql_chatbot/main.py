@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from llm_handler import LLMHandler
+from chatbot.llm_handler import LLMHandler
 
 api = FastAPI()
 
