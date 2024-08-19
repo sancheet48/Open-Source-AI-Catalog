@@ -1,0 +1,26 @@
+{
+    'car_id': String,
+    'model': String,
+    'manufacturer': String,  // Example values: ['Toyota', 'Ford', 'BMW', 'Tesla'],
+    'year': Number,
+    'vin': String,  // Vehicle Identification Number
+    'dealership': String,  // Example values: ['AutoNation', 'CarMax', 'Lithia', 'Penske'],
+    
+    'engine': [{
+        'engine_type': String,  // Example values: ['V6', 'V8', 'Electric', 'Hybrid'],
+        'serial_number': String,
+        'horsepower': Number,
+    }],
+    
+    'transmission': [{
+        'type': String,  // Example values: ['Automatic', 'Manual', 'CVT'],
+        'serial_number': String,
+        'gears': Number,
+    }],
+    
+    'tires': [{
+        'serial_number': String,
+        'brand': String,  // Example values: ['Michelin', 'Goodyear', 'Pirelli', 'Bridgestone'],
+        'size': String,  // Example values: ['225/45R17', '245/40R18']
+    }],
+}

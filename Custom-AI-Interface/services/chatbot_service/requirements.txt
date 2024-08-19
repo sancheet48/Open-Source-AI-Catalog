@@ -1,5 +1,0 @@
-langchain
-langchain-community
-ctransformers
-fastapi
-uvicorn
