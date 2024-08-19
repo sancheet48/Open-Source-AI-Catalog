@@ -1,0 +1,12 @@
+pymongo
+langchain
+langchain-community
+ctransformers
+fastapi
+uvicorn
+wheel
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch==2.2.0+cpu
+sentence-transformers
+chromadb
+motor

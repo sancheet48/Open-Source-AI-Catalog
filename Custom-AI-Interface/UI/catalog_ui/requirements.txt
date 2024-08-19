@@ -1,2 +1,7 @@
 streamlit_option_menu
 streamlit
+langchain
+langchain-community
+ctransformers
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch==2.2.0+cpu
