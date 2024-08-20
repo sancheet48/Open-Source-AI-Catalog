@@ -139,9 +139,51 @@ def sidebar_options():
     st.sidebar.markdown("---")
 
 
+    # Un comment this one while running locally and comment the below markdown
+    # if st.sidebar.button("🤖 Open Chatbot"):
+    #     st.session_state.show_chatbot = True
 
-    if st.sidebar.button("🤖 Open Chatbot"):
-        st.session_state.show_chatbot = True
+    st.sidebar.markdown("""
+        <style>
+            .disabled-button {
+                pointer-events: none;
+                cursor: not-allowed;
+                opacity: 0.6;
+                width: 100%;
+            }
+            .tooltip {
+                position: relative;
+                display: inline-block;
+                width: 60%;
+            }
+            .tooltip .tooltiptext {
+                visibility: hidden;
+                width: 100%;
+                max-width: 240px;
+                background-color: #555;
+                color: #fff;
+                text-align: center;
+                border-radius: 5px;
+                padding: 5px;
+                position: absolute;
+                z-index: 1;
+                bottom: 150%; /* Position above the button */
+                left: 50%;
+                transform: translateX(-50%);
+                opacity: 0;
+                transition: opacity 0.3s;
+            }
+            .tooltip:hover .tooltiptext {
+                visibility: visible;
+                opacity: 1;
+            }
+        </style>
+
+        <div class="tooltip">
+            <button class="disabled-button">🤖 Open Chatbot</button>
+            <span class="tooltiptext">Memory consumption exceeds free tier, so please download the container and run locally.</span>
+        </div>
+    """, unsafe_allow_html=True)
 
     return selected_catalog_option, selected_use_cases
 
